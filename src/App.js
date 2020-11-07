@@ -11,8 +11,8 @@ function App() {
       </Main>
       <Footer>
         <FooterInner>
-          View the code on{" "}
-          <a href="https://github.com/Clarity-89/React_tic_tac_toe">Github</a>
+          <label>Dibuat oleh:</label><br/>
+          <label>Yoel Alfandi 1119101688 - Kecerdasan Buatan SP3.1</label>
         </FooterInner>
       </Footer>
     </>

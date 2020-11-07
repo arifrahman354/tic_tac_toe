@@ -16,7 +16,7 @@ export const GAME_STATES = {
 };
 
 export const GAME_MODES = {
-  easy: "easy",
-  medium: "medium",
-  difficult: "difficult"
+  Mudah : "Mudah",
+  Normal : "Normal",
+  Susah : "Susah"
 };

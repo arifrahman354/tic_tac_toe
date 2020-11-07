@@ -36,14 +36,14 @@ const TicTacToe = ({ squares = arr }) => {
       let winnerStr;
       switch (winner) {
         case PLAYER_X:
-          winnerStr = "Player X wins!";
+          winnerStr = "Pemain X menang!";
           break;
         case PLAYER_O:
-          winnerStr = "Player O wins!";
+          winnerStr = "Pemain O menang!";
           break;
         case DRAW:
         default:
-          winnerStr = "It's a draw";
+          winnerStr = "Permainan Seri";
       }
       setGameState(GAME_STATES.over);
       setWinner(winnerStr);
@@ -158,7 +158,8 @@ const TicTacToe = ({ squares = arr }) => {
   return gameState === GAME_STATES.notStarted ? (
     <Screen>
       <Inner>
-        <ChooseText>Select difficulty</ChooseText>
+        <ChooseText>Permainan Tic-Tac-Toe ReactJS</ChooseText>
+        <ChooseText>Pilih Tingkat Kesulitan</ChooseText>
         <select onChange={changeMode} value={mode}>
           {Object.keys(GAME_MODES).map(key => {
             const gameMode = GAME_MODES[key];
@@ -171,10 +172,10 @@ const TicTacToe = ({ squares = arr }) => {
         </select>
       </Inner>
       <Inner>
-        <ChooseText>Choose your player</ChooseText>
+        <ChooseText>Pilih Pemain</ChooseText>
         <ButtonRow>
           <button onClick={() => choosePlayer(PLAYER_X)}>X</button>
-          <p>or</p>
+          <p>/</p>
           <button onClick={() => choosePlayer(PLAYER_O)}>O</button>
         </ButtonRow>
       </Inner>

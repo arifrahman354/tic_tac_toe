@@ -18,12 +18,12 @@ export const ResultModal = ({ isOpen, close, startNewGame, winner }) => {
       ariaHideApp={false}
     >
       <ModalWrapper>
-        <ModalTitle>Game over</ModalTitle>
+        <ModalTitle>Permainan Selesai</ModalTitle>
         <ModalContent>{winner}</ModalContent>
 
         <ModalFooter>
-          <Button onClick={close}>Close</Button>
-          <Button onClick={startNewGame}>Start over</Button>
+          <Button onClick={close}>Tutup</Button>
+          <Button onClick={startNewGame}>Mulai Lagi</Button>
         </ModalFooter>
       </ModalWrapper>
     </StyledModal>
